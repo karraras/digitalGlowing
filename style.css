@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #000000;
+}
+.parent {
+  background: linear-gradient(0deg, #ffeb3b, #ff3076, #1cff1c);
+  box-shadow: -12px 0px 28px -5px #1cff1c, 8px 1px 20px 0px #ffd542;
+  position: relative;
+  width: 260px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  animation: rotats infinite 1s forwards linear;
+}
+.date {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: transparent;
+  background: linear-gradient(100deg, #00edff, #e237ff, #33ff33);
+  -webkit-background-clip: text;
+  position: absolute;
+  z-index: 33;
+  animation: rotatz infinite 1s forwards linear;
+}
+span {
+  position: absolute;
+  width: 240px;
+  height: 70px;
+  background: black;
+  border-radius: 5px;
+}
+
+@keyframes rotatz {
+  form {
+    background: linear-gradient(0deg, #00edff, #e237ff, #33ff33);
+    -webkit-background-clip: text;
+  }
+  to {
+    background: linear-gradient(360deg, #00edff, #e237ff, #33ff33);
+    -webkit-background-clip: text;
+  }
+}
+@keyframes rotats {
+  to {
+    background: linear-gradient(360deg, #00edff, #e237ff, #33ff33);
+  }
+}
